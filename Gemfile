@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.1.1'
-gem 'pg'
+gem 'mysql2'
 gem 'jquery-rails'
 gem 'json'
 gem 'haml-rails'
