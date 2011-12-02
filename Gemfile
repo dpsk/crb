@@ -30,6 +30,7 @@ group :development do
   gem "letter_opener"
   gem 'mysql2'
   gem 'mongrel'
+  gem 'rails-dev-tweaks'
 end
 
 group :test do
@@ -48,5 +49,4 @@ end
 group :development, :test do
   gem 'ffaker'
   gem 'factory_girl_rails'
-  gem 'rails-dev-tweaks'
 end

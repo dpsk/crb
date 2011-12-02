@@ -27,4 +27,7 @@ Crb::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  #rails-dev-tweaks gem
+  config.dev_tweaks.log_autoload_notice = false
 end
