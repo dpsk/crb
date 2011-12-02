@@ -29,6 +29,7 @@ group :development do
   gem "letter_opener"
   gem 'thin'
   gem 'rails-dev-tweaks'
+  gem 'heroku'
 end
 
 group :test do
