@@ -11,7 +11,6 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'fog'
 gem 'pg'
-gem 'thin'
 gem 'heroku'
 
 group :assets do
@@ -29,8 +28,8 @@ group :development do
   gem "guard"
   gem 'libnotify'
   gem "letter_opener"
-  gem 'rails-dev-tweaks'
   gem 'mysql2'
+  gem 'mongrel'
 end
 
 group :test do
@@ -49,4 +48,5 @@ end
 group :development, :test do
   gem 'ffaker'
   gem 'factory_girl_rails'
+  gem 'rails-dev-tweaks'
 end
