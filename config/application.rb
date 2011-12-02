@@ -44,5 +44,8 @@ module Crb
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    #rails-dev-tweaks gem
+    config.dev_tweaks.log_autoload_notice = false
   end
 end

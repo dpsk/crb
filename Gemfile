@@ -1,7 +1,6 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.1.1'
-gem 'mysql2'
 gem 'jquery-rails'
 gem 'json'
 gem 'haml-rails'
@@ -12,6 +11,8 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'fog'
 gem 'pg'
+gem 'thin'
+gem 'heroku'
 
 group :assets do
   gem 'sass-rails',   '~> 3.1.4'
@@ -28,9 +29,8 @@ group :development do
   gem "guard"
   gem 'libnotify'
   gem "letter_opener"
-  gem 'thin'
   gem 'rails-dev-tweaks'
-  gem 'heroku'
+  gem 'mysql2'
 end
 
 group :test do
