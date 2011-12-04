@@ -16,6 +16,7 @@ Spork.prefork do
   # in spec/support/ and its subdirectories.
   Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
 
+
   RSpec.configure do |config|
     # == Mock Framework
     #
@@ -49,4 +50,6 @@ end
 
 Spork.each_run do
   FactoryGirl.reload
+  load "#{Rails.root}/config/routes.rb"
+  $rspec_start_time = Time.now
 end

@@ -3,7 +3,5 @@ rvm: 1.9.3
 script: "bundle exec rake --trace"
 
 before_script:
-  - "mysql -e 'create database crb_test;'"
   - "cp config/database{-travis,}.yml"
-  - "cp config/config.yml{.sample,}"
-  - "bundle exec rake db:setup"
+  - "bundle exec rake db:сreate db:migrate spec --trace"
