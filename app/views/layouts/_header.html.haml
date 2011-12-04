@@ -1,1 +1,9 @@
-%a.brand{:href => "#"} CRB
+= link_to 'CRB', root_url, :class => 'brand'
+
+.pull-right
+  - if current_user
+    %p
+      %a{href: "#"}Привет, #{current_user}!
+      = link_to "Выйти", destroy_user_session_path, :method => :delete
+  - else
+    = render :template => 'devise/sessions/new'

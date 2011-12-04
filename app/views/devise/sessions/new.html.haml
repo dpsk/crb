@@ -1,0 +1,6 @@
+= form_tag user_session_path, id: "sign-in" do
+  = text_field_tag 'user[email]', nil, type: "email"
+  = password_field_tag 'user[password]'
+  = submit_tag "Войти"
+  или
+  = link_to 'Зарегистрироваться', new_user_registration_path

@@ -30,4 +30,7 @@ Crb::Application.configure do
 
   #rails-dev-tweaks gem
   config.dev_tweaks.log_autoload_notice = false
+
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
 end

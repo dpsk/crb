@@ -1,13 +1,24 @@
 !!!
 %html
   %head
-    %title Crb
-    = stylesheet_link_tag    "application"
+    %link{ :rel => "shortcut icon", :href => "/favicon.ico", :type => "image/x-icon"}
+    = stylesheet_link_tag 'application'
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    .topbar
+    .topbar{:"data-scrollspy" => "scrollspy"}
       .fill
         .container
-          = render "layouts/header"
-    = yield
+          = render 'layouts/header'
+
+    .container
+      %section
+        .content
+          = display_flash_messages
+
+          .row
+            .span4.sidebar
+            .span12
+              = yield
+
+      .footer
