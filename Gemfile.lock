@@ -311,7 +311,6 @@ DEPENDENCIES
   sass-rails (~> 3.1.4)
   shoulda (>= 3.0.0.beta)
   spork (~> 0.9.0.rc)
-  therubyracer
   twitter-bootstrap-rails!
   twitter_bootstrap_form_for
   uglifier (>= 1.0.3)
