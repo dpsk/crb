@@ -1,9 +1,8 @@
 rvm: 1.9.3
-
+gemfile: Gemfile.ci
 script: "bundle exec rake spec"
 
 before_script:
   - "cp config/database.yml{.template,}"
   - "cp spec/spec_helper{.travis,}.rb"
-  - "cat config/database.yml"
   - "bundle exec rake db:setup --trace"
