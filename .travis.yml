@@ -1,4 +1,7 @@
 rvm: 1.9.3
 
+script: "bundle exec rake spec"
+
 before_script:
+  - "cp config/database{-travis,}.yml"
   - "cp spec/spec_helper{.travis,}.rb"
