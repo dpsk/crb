@@ -11,7 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111204093300) do
+ActiveRecord::Schema.define(:version => 20111207185357) do
+
+  create_table "adverts", :force => true do |t|
+    t.string  "title"
+    t.text    "content"
+    t.integer "user_id"
+  end
+
+  add_index "adverts", ["user_id"], :name => "index_adverts_on_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false
