@@ -23,16 +23,7 @@ group :assets do
 end
 
 group :development do
-  gem 'rb-inotify', :require => false
-  gem 'rb-fsevent', :require => false
-  gem 'rb-fchange', :require => false
-  gem "guard-rspec"
-  gem "guard"
-  gem 'libnotify'
-  gem "letter_opener"
   gem 'mysql2'
-  gem 'mongrel'
-  gem 'rails-dev-tweaks'
 end
 
 group :test do
