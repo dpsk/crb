@@ -42,7 +42,6 @@ group :test do
   gem "launchy"
   gem "fuubar"
   gem 'shoulda', '>= 3.0.0.beta'
-  gem 'ruby-debug19'
   gem 'spork', '~> 0.9.0.rc'
   gem "guard-spork"
 end
