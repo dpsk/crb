@@ -4,4 +4,5 @@ script: "bundle exec rake --trace"
 
 before_script:
   - "cp config/database{-travis,}.yml"
+  - "cp spec/spec_helper{.travis}.rb"
   - "bundle exec rake db:сreate db:migrate spec --trace"
