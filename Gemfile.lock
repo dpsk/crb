@@ -288,6 +288,7 @@ DEPENDENCIES
   pg
   rails (= 3.1.1)
   rails-dev-tweaks
+  rake
   rb-fchange
   rb-fsevent
   rb-inotify

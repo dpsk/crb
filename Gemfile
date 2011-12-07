@@ -14,6 +14,7 @@ gem 'pg'
 gem 'heroku'
 gem 'devise'
 gem 'russian'
+gem 'rake'
 
 group :assets do
   gem 'sass-rails',   '~> 3.1.4'
