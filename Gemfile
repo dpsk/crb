@@ -42,7 +42,7 @@ group :test do
   gem "database_cleaner"
   gem "launchy"
   gem "fuubar"
-  gem 'shoulda', '>= 3.0.0.beta'
+  gem 'shoulda', :git => 'git://github.com/radar/shoulda-context.git'
   gem 'spork', '~> 0.9.0.rc'
   gem "guard-spork"
 end
