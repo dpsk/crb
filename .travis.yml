@@ -1,5 +1,5 @@
 rvm: 1.9.3
-script: "bundle exec rake db:create db:migrate spec"
 before_script:
   - "cp config/database.yml{.template,}"
   - "cp spec/spec_helper{.travis,}.rb"
+  - "bundle exec rake db:create db:migrate"
