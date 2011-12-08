@@ -1,3 +1,4 @@
+# coding: utf-8
 module ApplicationHelper
 
   def display_flash_messages(params = nil)
@@ -24,7 +25,7 @@ module ApplicationHelper
     html << tag(:div, {class: 'actions'}, true)
     html << f.submit(value, :class => 'btn primary')
     html << "&nbsp;"
-    html << button_tag("Cancel", :class => 'btn', :type => 'reset')
+    html << button_tag("Отмена", :class => 'btn', :type => 'reset')
     html << '</div>'.html_safe
     html.html_safe
   end

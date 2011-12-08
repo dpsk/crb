@@ -1,18 +1,10 @@
 = page_header 'Зарегистрируйтесь'
 
-= twitter_bootstrap_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f|
-
-  = f.inputs '', :class => 'sign_up' do
-
-    = f.text_field :email, :placeholder => 'me@example.com'
-    = f.text_field :name, "Имя", :placeholder => 'Имя'
-
-    = f.password_field :password, 'Пароль' do
-      %span.help-block
-        Не менее 6 символов<br/>
-
-    = f.password_field :password_confirmation, 'Подтвердите пароль'
-
-  = f.actions do
-    = f.submit 'Зарегистрироваться', id: "register"
-    = button_tag  'Отменить', :type => 'reset', :class => 'btn'
+= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f|
+  .fieldset
+    .clearfix
+      = f.input :email, placeholder: 'me@example.com'
+      = f.input :name, label: 'Имя', placeholder: 'Имя'
+      = f.input :password, label: 'Пароль'
+      = f.input :password_confirmation, label: 'Подтвердите пароль'
+    = form_actions f, 'Зарегистрироваться'    

@@ -49,7 +49,11 @@ GEM
     addressable (2.2.6)
     arel (2.2.1)
     bcrypt-ruby (3.0.1)
+    bootstrap-form (0.0.8)
+      actionpack (~> 3.0)
+      railties (~> 3.0)
     builder (3.0.0)
+    cancan (1.6.7)
     capybara (1.1.2)
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
@@ -236,6 +240,9 @@ GEM
       shoulda-context (~> 1.0.0.beta1)
       shoulda-matchers (~> 1.0.0.beta1)
     shoulda-matchers (1.0.0)
+    simple_form (1.5.2)
+      actionpack (~> 3.0)
+      activemodel (~> 3.0)
     spork (0.9.0.rc9)
     sprockets (2.0.3)
       hike (~> 1.2)
@@ -250,9 +257,6 @@ GEM
     treetop (1.4.10)
       polyglot
       polyglot (>= 0.3.1)
-    twitter_bootstrap_form_for (1.0.5)
-      actionpack (~> 3)
-      railties (~> 3)
     tzinfo (0.3.31)
     uglifier (1.1.0)
       execjs (>= 0.3.0)
@@ -266,6 +270,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-form
+  cancan
   capybara (~> 1.1.1)
   capybara-webkit (~> 0.7.2)
   carrierwave
@@ -302,7 +308,7 @@ DEPENDENCIES
   sass-rails (~> 3.1.4)
   shoulda
   shoulda-context!
+  simple_form
   spork (~> 0.9.0.rc)
   twitter-bootstrap-rails!
-  twitter_bootstrap_form_for
   uglifier (>= 1.0.3)

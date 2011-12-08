@@ -1,7 +1,4 @@
-= twitter_bootstrap_form_for resource do |f|
-  = f.inputs 'Новое объявление' do
-    = f.text_field :title, "Заголовок"
-    = f.text_field :content, "Содержание"
-  = f.actions do   
-    = f.submit 'Подать объявление'
-    = button_tag  'Отмена', :type => 'reset', :class => 'btn'  
+= simple_form_for resource do |f|
+  = f.input :title, label: "Заголовок"
+  = f.input :content, label: "Содержание"
+  = form_actions f, resource.persisted? ? 'Изменить объявление' : 'Подать объявление'
