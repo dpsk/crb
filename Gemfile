@@ -33,6 +33,7 @@ group :development do
   gem 'mysql2'
   gem 'mongrel'
   gem 'rails-dev-tweaks'
+  gem 'shoulda-context', :git => 'git://github.com/dpsk/shoulda-context.git'
 end
 
 group :test do

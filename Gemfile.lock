@@ -1,4 +1,10 @@
 GIT
+  remote: git://github.com/dpsk/shoulda-context.git
+  revision: b2158d6eb3c6190402b5dba8c2710e60924262df
+  specs:
+    shoulda-context (1.0.0)
+
+GIT
   remote: http://github.com/seyhunak/twitter-bootstrap-rails.git
   revision: 4296bb9105ca6b0660419ac50e8a0682782de0a2
   specs:
@@ -229,7 +235,6 @@ GEM
     shoulda (3.0.0.beta2)
       shoulda-context (~> 1.0.0.beta1)
       shoulda-matchers (~> 1.0.0.beta1)
-    shoulda-context (1.0.0)
     shoulda-matchers (1.0.0)
     spork (0.9.0.rc9)
     sprockets (2.0.3)
@@ -296,6 +301,7 @@ DEPENDENCIES
   russian
   sass-rails (~> 3.1.4)
   shoulda
+  shoulda-context!
   spork (~> 0.9.0.rc)
   twitter-bootstrap-rails!
   twitter_bootstrap_form_for
